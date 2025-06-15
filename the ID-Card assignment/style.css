@@ -1,0 +1,180 @@
+/* Background and layout */
+body {
+    background-image: linear-gradient(to right, #6611c7, #673294);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card container */
+.container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 4px 5px 4px 4px rgb(29, 29, 26);
+}
+
+/* Profile image */
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    margin-left: 8.5px;
+}
+
+/* Badge */
+.i {
+    display: inline-block;
+    background: linear-gradient( #6a11cb, #2575fc);
+    color: white;
+    font-size: 0.80rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-style: normal;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Name */
+h2 {
+    margin: 10px 0 15px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/* Paragraph */
+.paragraph p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.divider {
+    height: 1px;
+    width: 80%;
+    margin: 22px auto;
+    background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+
+/* Social icons */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a i {
+    font-size: 1.4rem;
+    margin: 0 10px;
+}
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a i {
+    font-size: 1.4rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover i {
+    transform: scale(1.2);
+}
+
+/* Facebook - Blue */
+.facebook i {
+    color: #1877F2;
+}
+
+/* Instagram - Gradient */
+.instagram i {
+    background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+/* LinkedIn - Blue */
+.linkedin i {
+    color: #0077B5;
+}
+
+/* Email - Red */
+.email i {
+    color: #927f7e;
+}
+
+/* GitHub - Dark Gray */
+.github i {
+    color: #333;
+}
+
+/* Social icons hover effect */
+.social-icons a i:hover {
+    color: #6a11cb;
+}
+
+
+/* Small Devices (Phones) */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .paragraph p {
+    font-size: 0.85rem;
+  }
+
+  .social-icons a i {
+    font-size: 1.2rem;
+    margin: 0 6px;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width: 400px;
+    padding: 35px 25px;
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .paragraph p {
+    font-size: 0.88rem;
+  }
+
+  .social-icons a i {
+    font-size: 1.3rem;
+  }
+}
