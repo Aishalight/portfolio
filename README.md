@@ -3,7 +3,7 @@
 A high-performance, responsive portfolio website featuring a glassmorphism design. Built to showcase projects.
 
 ## 🌐 Live Demo
-**[View Live Site](https://aishalight.github.io/porfolio)**
+**[View Live Site](https://aishalight.github.io/portfolio/)**
 
 ---
 
