@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aisha Ahmed | Cybersecurity & AI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="./logo.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body data-theme="dark">
+    <canvas id="particle-canvas"></canvas>
+    <div class="cursor-glow"></div>
+    <div class="cursor-dot"></div>
+
+    <div id="cmd-palette" class="modal-overlay">
+        <div class="modal-content glass">
+            <div class="search-row">
+                <i class='bx bx-terminal'></i>
+                <input type="text" id="cmd-input"
+                    placeholder="Type a command (try 'projects', 'theme', or 'contact')...">
+            </div>
+            <div id="cmd-results">
+                <div class="cmd-item">Press <kbd>ESC</kbd> to close</div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="logo">AISHA <span>• DEV</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="cv.html" target="_blank" class="btn-cv" style="text-decoration: none;">View / Download CV</a>
+            <div class="theme-toggle"><i class='bx bx-sun'></i></div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <div class="hero-row">
+                <div class="hero-text">
+                    <p class="greeting">Hi, I'm</p>
+                    <h1 class="name">Aisha A.<span>Ahmed </span></h1>
+                    <p class="titles" id="typing-text"></p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn-blue">View Projects →</a>
+                        <a href="#contact" class="btn-outline">Message Me</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="earth-glow"></div>
+                    <img src="./pic.jpg" alt="Aisha Ahmed" class="portrait">
+                </div>
+            </div>
+            <div class="focus-card glass" id="focus-container"></div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2>PROJECTS <span id="project-count">0</span></h2>
+                <div class="filter-tabs">
+                    <button class="tab active" data-filter="all">All</button>
+                    <button class="tab" data-filter="front-end">Front-End</button>
+                    <button class="tab" data-filter="security">Security</button>
+                    <button class="tab" data-filter="games">Games</button>
+                    <button class="tab" data-filter="full-stack">Full-Stack</button>
+                </div>
+            </div>
+            <div class="projects-grid" id="projects-grid"></div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="skills-grid" id="skills-container"></div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="contact-container glass">
+                <h2>Get In <span>Touch</span></h2>
+                <!-- FormSubmit action pointing to the user's email -->
+                <form id="contact-form" action="https://formspree.io/f/mwvrryqo" method="POST">
+                    
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea id="message" name="message" placeholder="Reach out anytime..." rows="5"
+                        required></textarea>
+                    <button type="submit" class="btn-blue">Send Message <i class='bx bx-send'></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo">AISHA <span>• DEV</span></div>
+                <p>Building secure, high-performance digital experiences with a focus on Cybersecurity and AI.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Aishalight"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/shaqobadan"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/share/1AmyZGzEuz/"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/aisha_shaqabadan"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-services">
+                <h3>Specialized In</h3>
+                <ul>
+                    <li>Cybersecurity</li>
+                    <li>AI Engineering</li>
+                    <li>Frontend Dev</li>
+                    <li>UI/UX Design</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Aisha Ahmed | Built with 🤍</p>
+            <div class="origin">🇸🇴 Proudly Somali <span></span></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
